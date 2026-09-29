@@ -2,6 +2,7 @@ body {
     background-color: rgb(22, 20, 20);
     margin: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .App-header {
     width: 100vw;
@@ -34,6 +35,7 @@ body {
 .App-mid-left {
     height: 100%;
     max-width: 50vw;
+    padding: 1vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -43,19 +45,26 @@ body {
     height: auto;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: row;
 }
 @media (orientation: portrait) {
+    body {
+        margin-bottom: 3vh;
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
     .App-mid {
+        min-height: 100vh;
+        height: auto;
         flex-direction: column;
     }
     .App-mid-left-box {
         min-width: 45%;
     }
     .App-mid-left {
-        min-width: 100vw;
-        background-color: antiquewhite;
+        min-width: 95vw;
     }
     .App-header {
         height: auto;
@@ -63,6 +72,14 @@ body {
     }
     .App-header-text {
         font-size: 4vw;
+    }
+    .App-mid-mid {
+        min-height: 50vh;
+        min-width: 40%;
+        max-width: 100%;
+    }
+    .line {
+        height: 15vh;
     }
 
 }
@@ -122,7 +139,7 @@ body {
 .line {
     width: 5px;              
     background-color: rgba(255, 0, 0, 0.466);
-    height: 15%;   
+    height: 15vh;   
 }
 .App-mid-box-vs {
   display: flex;
