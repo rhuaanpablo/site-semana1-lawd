@@ -32,7 +32,7 @@ eventos.forEach(e => window.addEventListener(e, () => {
          resizeFont("mid-text1",'5vw');
         resizeFont("mid-text2",'1vw');
         resizeBox("big-box","40%");
-        resizeBox("npage-button","1vw");
+        resizeBox("npage-button","40%");
         resizeFont("bfont",'1vw');
     }
 }))

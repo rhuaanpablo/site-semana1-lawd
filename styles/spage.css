@@ -4,8 +4,8 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: row;
+    overflow-y: auto;
 }
-
 .left {
     width: 50vw;
     height: 100vh;
@@ -14,6 +14,7 @@ body {
     align-items: center;
     justify-content: center;
     border-right: 2px solid rgba(255, 5, 5, 0.541);
+    margin: 0;
 }
 .right {
     background-color: rgba(255, 2, 2, 0.555);
@@ -76,4 +77,27 @@ body {
     background-position: center; 
     background-repeat: no-repeat;
     flex-shrink: 0;  
+}
+@font-face {
+  font-family: 'Flamengo021';
+  src: url('../assets/Flamengo021.ttf') format('truetype');
+}
+.Box-legends-text {
+     font-family: 'Flamengo021';
+     color: white;
+     font-size: 0.9vw;
+}
+@media (orientation: portrait ) or (width < 900px){
+    body {
+        flex-direction: column;
+    }
+    .left {
+        min-width: 100vw;
+    }
+    .right{
+        min-width: 100vw;
+    }
+    .Box-legends-text {
+        font-size: 2.3vw;
+    }
 }

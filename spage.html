@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/spage.css">
+    <link rel="icon" href="assets/fla.png" type="image/x-icon">
+    <title>Flamengo</title>
     <link rel="stylesheet" href="styles/fpage.css">
+    <link rel="stylesheet" href="styles/spage.css">
 </head>
 <body>
     <div class="left">
@@ -17,8 +18,8 @@
                 <img style="max-width: 80%;" src="assets/liberta.png">
             </div>
             <div class="Box-collums">
-                <p class="App-header-text" style="font-size: 4.5vw; color: red; margin: 0;" >4x</p>
-                <p class="App-header-text" style="font-size: 1vw; margin: 0;">Libertadores</p>
+                <p id="title-num-1" class="App-header-text" style="font-size: 4.5vw; color: red; margin: 0;" >4x</p>
+                <p id="title-label-1" class="App-header-text" style="font-size: 1vw; margin: 0;">Libertadores</p>
             </div>
         </div>
         <div class="Box-titles">
@@ -26,8 +27,8 @@
                 <img style="max-width: 100%;" src="assets/brasilei.png">
             </div>
             <div class="Box-collums">
-                <p class="App-header-text" style="font-size: 4.5vw; color: red; margin: 0;" >9x</p>
-                <p class="App-header-text" style="font-size: 1vw; margin: 0;">Brasileirão</p>
+                <p id="title-num-2" class="App-header-text" style="font-size: 4.5vw; color: red; margin: 0;" >9x</p>
+                <p id="title-label-2" class="App-header-text" style="font-size: 1vw; margin: 0;">Brasileirão</p>
             </div>
         </div>
         <div class="Box-titles">
@@ -35,8 +36,8 @@
                 <img style="max-width: 80%;" src="assets/copbr.png">
             </div>
             <div class="Box-collums">
-                <p class="App-header-text" style="font-size: 4.5vw; color: red; margin: 0;" >5x</p>
-                <p class="App-header-text" style="font-size: 0.8vw; margin: 0;">Copa do Brasil</p>
+                <p id="title-num-3" class="App-header-text" style="font-size: 4.5vw; color: red; margin: 0;" >5x</p>
+                <p id="title-label-3" class="App-header-text" style="font-size: 0.8vw; margin: 0;">Copa do Brasil</p>
             </div>
         </div>
         <div class="Box-titles">
@@ -44,8 +45,8 @@
                 <img style="max-width: 100%;" src="assets/mclubes.png">
             </div>
             <div class="Box-collums">
-                <p class="App-header-text" style="font-size: 4.5vw; color: red; margin: 0;" >1x</p>
-                <p class="App-header-text" style="font-size: 0.7vw; margin: 0;">Mundial de Clubes</p>
+                <p id="title-num-4" class="App-header-text" style="font-size: 4.5vw; color: red; margin: 0;" >1x</p>
+                <p id="title-label-4" class="App-header-text" style="font-size: 0.7vw; margin: 0;">Mundial de Clubes</p>
             </div>
         </div>
         <div class="Box-titles">
@@ -53,8 +54,8 @@
                 <img style="max-width: 100%;" src="assets/carioca.png">
             </div>
             <div class="Box-collums">
-                <p class="App-header-text" style="font-size: 4.5vw; color: red; margin: 0;" >40x</p>
-                <p class="App-header-text" style="font-size: 0.7vw; margin: 0;">Campeonato Carioca</p>
+                <p id="title-num-5" class="App-header-text" style="font-size: 4.5vw; color: red; margin: 0;" >40x</p>
+                <p id="title-label-5" class="App-header-text" style="font-size: 0.7vw; margin: 0;">Campeonato Carioca</p>
             </div>
         </div>
         <div class="Box-titles">
@@ -62,28 +63,27 @@
                 <img style="max-width: 100%;" src="assets/scopa.png">
             </div>
             <div class="Box-collums">
-                <p class="App-header-text" style="font-size: 4.5vw; color: red; margin: 0;" >3x</p>
-                <p class="App-header-text" style="font-size: 0.65vw; margin: 0;">Supercopa do Brasil</p>
+                <p id="title-num-6" class="App-header-text" style="font-size: 4.5vw; color: red; margin: 0;" >3x</p>
+                <p id="title-label-6" class="App-header-text" style="font-size: 0.65vw; margin: 0;">Supercopa do Brasil</p>
             </div>
         </div>
     </div>
     <h1 class="App-header-text" style="color: red; margin: 0;">VENCER! <span style="color: white;">VENCER! <span style="color: black;">VENCER!</span></span></h1>
     </div>
     <div class="right">
-         <p class="App-header-text" style="margin: 0; font-size: 6vw;">GRANDES<span  style="color: rgb(0, 0, 0);"> ÍDOLOS</span></p>
+         <p id="idolos-title" class="App-header-text" style="margin: 0; font-size: 6vw;">GRANDES<span  style="color: rgb(0, 0, 0);"> ÍDOLOS</span></p>
         <div class="Box-legends">
             <div class="Box-legends-img" style="background-image: url('assets/zico.jpg');"></div>
-           <p class="App-header-text" style="font-size: 1.0vw; margin: 0;">Arthur Antunes de Coimbra, mais conhecido como Zico, é o maior jogador da história do flamengo. Sendo o maior goleador e maior assistente da história do clube, o Galinho de Quintino guiou o Flamengo nas conquistas de 4 campeonatos brasileiros, na primeira Libertadores e um Mundial de Clubes.</p>
+           <p id="legend-text-1" class="Box-legends-text">Arthur Antunes de Coimbra, mais conhecido como Zico, é o maior jogador da história do flamengo. Sendo o maior goleador e maior assistente da história do clube, o Galinho de Quintino guiou o Flamengo nas conquistas de 4 campeonatos brasileiros, na primeira Libertadores e um Mundial de Clubes.</p>
         </div>
         <div class="Box-legends" style="background-color: white;">
-            <p class="App-header-text" style="font-size: 1.0vw; margin: 0; color: rgb(0, 0, 0);">Gabriel Barbosa, mais conhecido como GabiGol é marcado na história do Flamengo como o grande protagonista das duas conquistas do lendário ano de 2019, sendo muito lembrado por seus 2 gols emblemáticos na final da Libertadores daquele ano. </p>
+            <p id="legend-text-2" class="Box-legends-text" style="color: rgb(0, 0, 0);">Gabriel Barbosa, mais conhecido como GabiGol é marcado na história do Flamengo como o grande protagonista das duas conquistas do lendário ano de 2019, sendo muito lembrado por seus 2 gols emblemáticos na final da Libertadores daquele ano. </p>
             <div class="Box-legends-img" style="background-image: url('assets/gabi.jfif');"></div>
         </div>
         <div class="Box-legends">
             <div class="Box-legends-img" style="background-image: url('assets/leandro.jpg');"></div>
-           <p class="App-header-text" style="font-size: 0.95vw; margin: 0;">Leandro, mais conhecido como Peixe Frito, é considerado um dos maiores laterais da história do futebol. O lateral foi peça fundamental da geração mais vitoriosa do clube, conquistando quatro Campeonatos Brasileiros, a primeira Libertadores e o Mundial de Clubes, além de marcar seu nome na história rubro-negra ao lado de Zico e companhia.</p>
+           <p id="legend-text-3" class="Box-legends-text" style="margin-bottom: 0;">Leandro, mais conhecido como Peixe Frito, é considerado um dos maiores laterais da história do futebol. O lateral foi peça fundamental da geração mais vitoriosa do clube, conquistando quatro Campeonatos Brasileiros, a primeira Libertadores e o Mundial de Clubes, além de marcar seu nome na história rubro-negra ao lado de Zico e companhia.</p>
         </div>
     </div>
-
 </body>
 </html>
